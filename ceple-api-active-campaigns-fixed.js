@@ -1,15 +1,10 @@
 // ═══════════════════════════════════════════════════════
+import { supabase } from './supabase.js'
 //  ceple-api.js  —  Supabase Entegrasyon Katmanı
 //  Her iki HTML dosyasına da import edilir:
 //  <script src="ceple-api.js"></script>
 // ═══════════════════════════════════════════════════════
 
-// ── BAĞLANTI ────────────────────────────────────────────
-const CEPLE_SUPA_URL = 'https://heakdotuajtyyqlvvarw.supabase.co';
-const CEPLE_SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhlYWtkb3R1YWp0eXlxbHZ2YXJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNTg4OTAsImV4cCI6MjA4ODYzNDg5MH0.50pWLHeyuzOjYr0bUA1oylv2-tx6Cddb9LNMH7_dFbY';
-
-// Supabase client — window.supa olarak erişilir
-window.supa = supabase.createClient(CEPLE_SUPA_URL, CEPLE_SUPA_KEY);
 
 
 // ════════════════════════════════════════════════════════
