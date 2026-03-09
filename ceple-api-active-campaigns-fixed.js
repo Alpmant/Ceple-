@@ -4,7 +4,19 @@ import { supabase } from './supabase.js'
 //  Her iki HTML dosyasına da import edilir:
 //  <script src="ceple-api.js"></script>
 // ═══════════════════════════════════════════════════════
+export async function getActiveCampaigns() {
+  const { data, error } = await supabase
+    .from('campaigns')
+    .select('*')
+    .eq('is_active', true)
 
+  if (error) {
+    console.error('Supabase hata:', error)
+    return []
+  }
+
+  return data
+}
 
 
 // ════════════════════════════════════════════════════════
